@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Disable scroll anchoring for virtual scrolling */
+/* This prevents scroll jumps when DOM elements are added/removed during virtual scrolling */
+html,
+body {
+  overflow-anchor: none;
+}
+
 /* Screen reader only - visually hidden but accessible */
 .sr-only {
   position: absolute;
