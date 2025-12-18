@@ -2,6 +2,8 @@
 
 A modern product catalog application built with Nuxt 3, featuring product listing, search, filtering, and detailed product views.
 
+**Live Demo**: [https://nuxt-product-catalog.vercel.app/](https://nuxt-product-catalog.vercel.app/)
+
 ## Tech Stack
 
 - **Framework**: Nuxt 3
@@ -125,16 +127,6 @@ Preview the production build locally:
 pnpm build
 pnpm preview
 ```
-
-### Static Site Generation
-
-Generate a static site:
-
-```bash
-pnpm generate
-```
-
-The static files will be in the `.output/public` directory.
 
 ## Testing
 
