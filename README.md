@@ -212,7 +212,3 @@ nxut-product-catalog/
 3. Vercel will automatically detect Nuxt 3 and deploy your application
 
 The project includes `vercel.json` configuration for optimal deployment settings.
-
-## License
-
-[Add your license information here]
