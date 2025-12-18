@@ -1,8 +1,10 @@
 <template>
-  <header class="flex items-center justify-between border-b border-gray-200 bg-white px-8 py-4">
+  <header
+    class="flex flex-wrap items-center justify-between border-b border-gray-200 bg-white px-8 py-4"
+  >
     <NuxtLink
       to="/"
-      class="text-2xl font-bold text-blue-600 transition-colors hover:text-blue-700"
+      class="w-full sm:w-fit block sm:inline-block text-2xl font-bold text-blue-600 transition-colors hover:text-blue-700"
       aria-label="Product Catalog - Go to homepage"
     >
       Product Catalog

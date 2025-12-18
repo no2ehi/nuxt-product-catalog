@@ -21,7 +21,7 @@ const ratingSort = defineModel<"" | SortOrder>("ratingSort", { default: "" });
 <template>
   <div class="mb-6 flex flex-wrap gap-4" role="group" aria-label="Filter and sort options">
     <!-- Category Filter -->
-    <div class="relative min-w-[180px]">
+    <div class="relative w-full sm:w-auto sm:flex-1 sm:min-w-[180px]">
       <label for="category-filter" class="sr-only">Filter by category</label>
       <Select id="category-filter" v-model="selectedCategory" class="w-full">
         <SelectTrigger aria-label="Select category filter">
@@ -75,7 +75,7 @@ const ratingSort = defineModel<"" | SortOrder>("ratingSort", { default: "" });
     </div>
 
     <!-- Price Sort -->
-    <div class="relative min-w-[180px]">
+    <div class="relative w-full sm:w-auto sm:flex-1 sm:min-w-[180px]">
       <label for="price-sort" class="sr-only">Sort by price</label>
       <Select id="price-sort" v-model="priceSort" class="w-full">
         <SelectTrigger aria-label="Select price sorting">
@@ -128,7 +128,7 @@ const ratingSort = defineModel<"" | SortOrder>("ratingSort", { default: "" });
     </div>
 
     <!-- Rating Sort -->
-    <div class="relative min-w-[180px]">
+    <div class="relative w-full sm:w-auto sm:flex-1 sm:min-w-[180px]">
       <label for="rating-sort" class="sr-only">Sort by rating</label>
       <Select id="rating-sort" v-model="ratingSort" class="w-full">
         <SelectTrigger aria-label="Select rating sorting">
