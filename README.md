@@ -204,76 +204,14 @@ nxut-product-catalog/
 
 ### Deploy to Vercel
 
-Vercel provides zero-configuration deployment for Nuxt 3 applications.
-
-#### Option 1: Deploy via Vercel Dashboard (Recommended)
-
-1. **Push your code to GitHub**
-
-   ```bash
-   git push origin main
+1. Import your GitHub repository on [Vercel](https://vercel.com)
+2. Configure Environment Variables in Vercel project settings:
    ```
-
-2. **Import your project on Vercel**
-   - Go to [vercel.com](https://vercel.com)
-   - Click "Add New Project"
-   - Import your GitHub repository
-   - Vercel will automatically detect Nuxt 3
-
-3. **Configure Environment Variables**
-   - In the Vercel project settings, go to "Environment Variables"
-   - Add your environment variable:
-     ```
-     NUXT_PUBLIC_API_BASE=https://your-api-url.com
-     ```
-
-4. **Deploy**
-   - Click "Deploy"
-   - Vercel will automatically build and deploy your application
-
-#### Option 2: Deploy via Vercel CLI
-
-1. **Install Vercel CLI**
-
-   ```bash
-   npm i -g vercel
+   NUXT_PUBLIC_API_BASE=https://your-api-url.com
    ```
+3. Vercel will automatically detect Nuxt 3 and deploy your application
 
-2. **Login to Vercel**
-
-   ```bash
-   vercel login
-   ```
-
-3. **Deploy**
-
-   ```bash
-   vercel
-   ```
-
-4. **Set Environment Variables**
-
-   ```bash
-   vercel env add NUXT_PUBLIC_API_BASE
-   ```
-
-5. **Deploy to Production**
-   ```bash
-   vercel --prod
-   ```
-
-#### Vercel Configuration
-
-The project includes a `vercel.json` configuration file that:
-
-- Sets the build command to `pnpm build`
-- Configures the output directory
-- Sets up the development command
-
-### Other Deployment Platforms
-
-- **Netlify**: Static site generation support
-- **Node.js servers**: Use `pnpm build` and run the server from `.output`
+The project includes `vercel.json` configuration for optimal deployment settings.
 
 ## License
 
