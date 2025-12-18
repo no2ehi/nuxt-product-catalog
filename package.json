@@ -2,6 +2,7 @@
   "name": "nxut-product-catalog",
   "private": true,
   "type": "module",
+  "packageManager": "pnpm@8.15.9",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
